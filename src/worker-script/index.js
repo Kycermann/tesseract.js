@@ -362,7 +362,7 @@ const processOutput = (output) => {
 // not including those with prefix "tessjs_"
 const tessjsOptions = ['rectangle', 'pdfTitle', 'pdfTextOnly', 'rotateAuto', 'rotateRadians'];
 
-const recognize = async ({
+const recognize = exports.recognize = async ({
   payload: {
     image, options, output,
   },
